@@ -1,0 +1,44 @@
+body, h1, h2{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+
+/* HEADER */
+
+
+.header {
+    background-image: url(./images/sao-paulo.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+.header h1 {
+    color: #FFFFFF;
+    font-size: 80px;
+    font-weight: 300;
+    padding: 50px 30px 0;
+}
+
+.header p {
+    color: #FFFFFF;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+#twitter {
+    width: 75px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0C7ABF;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-left: 30px;
+
+}
+
+/* CONTAINER */

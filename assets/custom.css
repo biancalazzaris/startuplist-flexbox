@@ -1,0 +1,137 @@
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    background-color: #EEEEEE;
+}
+
+:root {
+    --width-city: 290px;
+    --height-city: 200px;
+    --font-city: 30px;
+    --color-font-city: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* HEADER */
+
+header {
+    max-width: 1280px;
+    padding: 100px 40px 20px;
+    flex-flow: row column;
+}
+
+.title h1 {
+    font-size: 60px;
+}
+
+.title h3 {
+    font-size: 30px;
+    margin: 20px 0 0;
+}
+
+/* CONTAINER - SECTION */
+
+.citys {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ .citys div {
+     width: var(--width-city);
+     height:var(--height-city);
+     margin: 5px;
+ }
+
+ .citys h3 {
+    font-size: var(--font-city);
+    color: var(--color-font-city);
+    font-weight: 300;
+ }
+
+
+.atlanta, 
+.austin,
+.bangalore,
+.berlin,
+.boston,
+.boulder,
+.chicago,
+.hong-kong,
+.houston,
+.london,
+.los-angeles,
+.sao-paulo  {
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.atlanta {
+    background-image: url(./images/atlanta.jpg);
+}
+
+.austin {
+    background-image: url(./images/austin.jpg);
+}
+
+.bangalore {
+    background-image: url(./images/bangalore.jpg);
+}
+.berlin {
+    background-image: url(./images/berlin.jpg);
+}
+
+.boston {
+    background-image: url(./images/boston.jpg);
+}
+
+.boulder {
+    background-image: url(./images/boulder.jpg);
+}
+.chicago {
+    background-image: url(./images/chicago.jpg);
+}
+.hong-kong {
+    background-image: url(./images/hong-kong.jpg);
+}
+.houston {
+    background-image: url(./images/houston.jpg);
+}
+.london {
+    background-image: url(./images/london.jpg);
+}
+.los-angeles {
+    background-image: url(./images/los-angeles.jpg);
+}
+.sao-paulo {
+    background-image: url(./images/sao-paulo.jpg);
+}
+
+.citys div:hover {
+    background-size: auto;
+    background-position: unset;
+}
+
+@media (max-width: 800px) 
+{
+    .header { padding: 50px 20px 10px; }
+    .title h1 { font-size: 30px; }
+    .title h3 { font-size: 14px;}
+    .citys { padding-left: 30px;}
+}
